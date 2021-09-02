@@ -1,0 +1,67 @@
+
+
+$primary-bacground: #eeee;
+$dark-gray: #333;
+$nav1: #ee1a26;
+$nav2: #4ca90c;
+$nav3: #0064e5;
+$nav4: #a9adb5;
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+    background-color: $primary-bacground;
+}
+
+#btn__1 {
+    background: $nav1;
+}
+
+#heading-1 {
+    color: $nav1;
+    border-bottom: 2px solid $nav1;
+}
+
+#btn__2 {
+    background: $nav2;
+}
+
+#heading-2 {
+    color: $nav2;
+    border-bottom: 2px solid $nav2;
+}
+
+#btn__3 {
+    background: $nav3;
+}
+
+#heading-3 {
+    color: $nav3;
+    border-bottom: 2px solid $nav3;
+}
+
+#btn__4 {
+    background: $nav4;
+}
+
+#heading-4 {
+    color: $nav4;
+    border-bottom: 2px solid $nav4;
+}
+
+
