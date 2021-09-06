@@ -1,0 +1,142 @@
+
+
+page {
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    // box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+page[size="A4"] {  
+    // width: 21cm;
+    width: 25cm;
+    height: 29.7cm;
+    
+}
+
+.page {
+    
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+        
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    &__generate {
+        display: flex;
+        padding: 1rem;
+
+        &--file {
+            background: #337ab7;
+            border-radius: 5px;
+            color: #fff;
+            margin-right: auto;
+            padding: .5rem;
+            
+        }
+
+        &--btn {
+            background: #337ab7;
+            color: #fff;
+            padding: .5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+    }
+
+    &__titles {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        width: 660px;
+        padding: .5rem 2rem;
+        background: #D0ECEC;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 2.4rem;
+        margin-right: 3.2rem;
+    }
+
+    &__input {
+        text-align: center;
+        font-size: 1.9rem;
+        width: 20rem;
+    }
+
+    &__content {
+        width: 780px;
+        
+        
+        margin: auto;
+
+        &--group {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        &--item {
+            display: flex;
+            align-items: center;
+            
+            margin: auto;
+            width: 25rem;
+            
+
+            p {
+                font-size: 1.7rem;
+                display: block;
+        
+                
+            }
+
+            label {
+                margin-left: .5rem;
+                font-size: 1.5rem;
+                display: block;
+                // max-width: 170px;
+                // background: chocolate;
+            }
+        }
+
+        &--text {
+            margin-top: -13rem;
+            margin-right: 16rem;
+            font-size: 1.5rem;
+            width: 30rem;
+            height: 140px;
+            padding: .8rem;
+            border-radius: 10px;
+            border: 1px solid #337ab7;
+            float: right;
+        }
+    }
+
+    &__table {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+
+        table {
+            width: 100%;
+            
+
+            td, th {
+                border: 2px solid #000;
+                text-align: left;
+                padding: 8px;
+               
+            }
+        }
+    }
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container_1">
+        <!-- Sidebarile on lisatud position fixed -->
+        <div style="position: fixed; width: 8rem;" class="sidebar">
+            <div class="sidebar__nav">
+                <div class="dropdown">
+                    <button id="btn__1" class="dropbtn">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="css/svg/icons.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="dropdown-list">
+                            <h2 id="heading-1">Tootmismoodul</h2>
+                            <a href="#">Ettevalmistus (Materjalid, Operatsioonid)</a>
+                            <a href="#">Eelarvestus ning järelarvestus</a>
+                            <a href="#">Tootmistellimused</a>
+                            <a href="#">Ressursside planeerimine</a>
+                            <a href="#">Materjalide käitlemine</a>
+                            <a href="#">Tööaegade, materjali</a>
+                            <a href="#">Statistika</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button id="btn__2" class="dropbtn">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="css/svg/icons.svg#icon-cart"></use>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="dropdown-list">
+                            <h2 id="heading-2">Ostmine</h2>
+                            <a href="#">Tarnijate register</a>
+                            <a href="#">Päringute haldus</a>
+                            <a href="#">Ostutellimuste haldus</a>
+                            <a href="#">Saabumised (kauba markeerimine)</a>
+                            <a href="#">Tarnija reskontra (maksefailid)</a>
+                            <a href="#">Statistika (BI)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button id="btn__3" class="dropbtn">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="css/svg/icons.svg#icon-briefcase"></use>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="dropdown-list">
+                            <h2 id="heading-3">Müük</h2>
+                            <a href="#">Kliendiregister</a>
+                            <a href="#">Pakkumised</a>
+                            <a href="#">Töö jaotused</a>
+                            <a href="#">Kauba saatmine ja transport</a>
+                            <a href="#">Arveldused (arvete plaanid)</a>
+                            <a href="#">Müügireskontra</a>
+                            <a href="#">Impordi exceli andmed</a>
+                            <a href="#">Statistika (BI)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button id="btn__4" class="dropbtn">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="css/svg/icons.svg#icon-folder"></use>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="dropdown-list">
+                            <h2 id="heading-4">Laomoodul</h2>
+                            <a href="#"> Artiklite register</a>
+                            <a href="#">MRP</a>
+                            <a href="#">Füüsiline inventuur</a>
+                            <a href="#">Erinevate ladude/asukohtade haldamine</a>
+                            <a href="#">Tooteregister</a>
+                            <a href="#">Kvaliteedi juhtimine</a>
+                            <a href="#">Laoväärtus ning pooltoodangu väärtus (WIP)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div class="content">
+            <div class="header">
+                <div class="logout">
+                    <div class="logout__btn">
+                        <a href="#">
+                            <svg class="logout__icon">
+                                <use xlink:href="css/svg/icons.svg#icon-exit"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- SISU -->
+            <div class="page">
+                <page size="A4">
+                    <!-- HEADER -->
+                    <div class="page__header">
+                        <img src="./css/img/ert_logo.png">
+                        <div>
+                            <div class="page__generate">
+                                <input class="page__generate--file" type="file">
+                                <button class="page__generate--btn" onclick="clearData()" value="Reset form">Tühjenda väljad</button>
+                            </div>
+                            <div class="page__titles">
+                                <h2>Tootekaart</h2>
+                                <label class="page__title" for="title1">KAST</label>
+                                <label class="page__title" for="title2">211408</label>
+                                <!-- <input class="page__input" id="KR_04" type="text">
+                                <input class="page__input" id="nr05" type="text"> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MAIN CONTENT -->
+                    <div class="page__content">
+                        <div class="page__content--group">
+                            <div class="page__content--item">
+                                <p>Keevitaja 1:</p>
+                                <label for="kev1" id="kev1"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Võttis vastu:</p>
+                                <label for="kev1" id="vot1"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Andis üle:</p>
+                                <label for="kev1" id="and1"></label>
+                            </div>
+                        </div>
+                        <div class="page__content--group">
+                            <div class="page__content--item">
+                                <p>Keevitaja 2:</p>
+                                <label for="kev1" id="kev2"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Võttis vastu:</p>
+                                <label for="kev1" id="vot2"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Andis üle:</p>
+                                <label for="kev1" id="and2"></label>
+                            </div>
+                        </div>
+                        <div class="page__content--group">
+                            <div class="page__content--item">
+                                <p>Keevitaja 3:</p>
+                                <label for="kev1" id="kev3"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Võttis vastu:</p>
+                                <label for="kev1" id="vot3"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Andis üle:</p>
+                                <label for="kev1" id="and3"></label>
+                            </div>
+                        </div>
+                        <div class="page__content--group">
+                            <div class="page__content--item">
+                                <p>Keevitaja 4:</p>
+                                <label for="kev1" id="kev4"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Võttis vastu:</p>
+                                <label for="kev1" id="vot4"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Andis üle:</p>
+                                <label for="kev1" id="and4"></label>
+                            </div>
+                        </div>
+                        <div class="page__content--group">
+                            <div class="page__content--item">
+                                <p style="margin-left: 28px;">Meister:</p>
+                                <label for="kev1" id="mei"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Võttis vastu:</p>
+                                <label for="kev1" id="vot5"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Andis üle:</p>
+                                <label for="kev1" id="and5"></label>
+                            </div>
+                        </div>
+                        <div class="page__content--group">
+                            <div class="page__content--item">
+                                <p style="margin-left: 32px;">Värvija:</p>
+                                <label for="kev1" id="varv"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Võttis vastu:</p>
+                                <label for="kev1" id="vot6"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Andis üle:</p>
+                                <label for="kev1" id="and6"></label>
+                            </div>
+                        </div>
+                        <div class="page__content--group">
+                            <div class="page__content--item">
+                                <p style="margin-left: -28px;">Komplekteerija:</p>
+                                <label for="kev1" id="komp"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Võttis vastu:</p>
+                                <label for="kev1" id="vot7"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p>Andis üle:</p>
+                                <label for="kev1" id="and7"></label>
+                            </div>
+                        </div>
+                        <div class="page__content--group">
+                            <div class="page__content--item">
+                                <p style="margin-left: 42px;">Tellija:</p>
+                                <label for="tellija" id="tellija"></label>
+                                <!-- <input style="width: 15rem; padding: 0.7rem 0.1rem;" id="tellija" type="text"> -->
+                            </div>
+                            <div class="page__content--item"></div>
+                            <div class="page__content--item">
+                                <p style="margin-left: 8px;">Tellimus:</p>
+                                <label for="tellimus" id="tellimus"></label>
+                                <!-- <input style="width: 15rem; padding: 0.7rem 0.1rem;" id="tellimus" type="text"> -->
+                            </div>
+                        </div>
+                        <div class="page__content--group">
+                            <div class="page__content--item">
+                                <p style="margin-left: 18px;">Soovitud:</p>
+                                <label for="kev1" id="soov"></label>
+                            </div>
+                            <div class="page__content--item">
+                                <p style="margin-left: 35px;">Tegelik:</p>
+                                <label for="kev1" id="tegelik"></label>
+                            </div>
+                            <div class="page__content--item"></div>
+                        </div>
+                        <div style="border-bottom: 1px solid #000; margin: 2rem 0rem;"></div>
+                        <!-- KAST -->
+                        <div class="kast">
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 8px;">Toote mall:</p>
+                                    <label style="font-weight: bold;" for="kast1" id="kast1">E20 5,5x1,0  JLV</label>
+                                </div>
+                                <div class="page__content--item">
+                                    <p style="margin-left: 91px;"></p>
+                                    <label style="font-weight: bold;" for="kast2" id="kast2">200x100x6</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 50px;">Kaal:</p>
+                                    <label style="font-weight: bold;" for="kast3" id="kast3">2120</label>
+                                </div>
+                                <div class="page__content--item">
+                                    <p style="margin-left: 52px;">Värv:</p>
+                                    <label style="font-weight: bold;" for="kast4" id="kast4">RAL 9005</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 34px;">Pikkus:</p>
+                                    <label style="font-weight: bold;" for="kev1" id="kast5">5.5</label>
+                                </div>
+                                <div class="page__content--item">
+                                    <p style="margin-left: 45px;">Laius:</p>
+                                    <label style="font-weight: bold;" for="kev1" id="kast6">KON(2,55)</label>
+                                </div>
+                                <div class="page__content--item">
+                                    <p style="margin-left: 16px;">Kõrgus:</p>
+                                    <label style="font-weight: bold;" for="kev1" id="kast7">1</label>
+                                </div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 50px;">Põhi:</p>
+                                    <label style="font-weight: bold;" for="kev1" id="kast8">6 Hardox</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 50px;">Külg:</p>
+                                    <label style="font-weight: bold;" for="kev1" id="kast9">4 Hardox</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 50px;">Luuk:</p>
+                                    <label style="font-weight: bold;" for="kev1" id="kast10">6 Hardox</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 9px;">Puisteluuk:</p>
+                                    <label style="font-weight: bold;" for="kev1" id="kast11">-</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: -18px;">Tõstesüsteem:</p>
+                                    <label style="font-weight: bold;" for="kev1" id="kast12">2 x NAT 7</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--text">
+                                <p>Märkused:</p>
+                                <textarea 
+                                    style="height: 10rem; width: 100%; border: none; font-size: 1.6rem; outline: none;" 
+                                    name="" id="comments" cols="30" rows="10">
+                                </textarea>
+                            </div>
+                        </div>
+                        <!-- KAST END -->
+                        <!-- RAAM -->
+                        <!-- <div class="raam">
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 8px;">Toote mall:</p>
+                                    <label for="raam1" id="raam1">E20 5,5x1,0  JLV</label>
+                                </div>
+                                <div class="page__content--item">
+                                    <p style="margin-left: 91px;"></p>
+                                    <label for="raam2" id="raam2">200x100x6</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 50px;">Kaal:</p>
+                                    <label for="raam3" id="raam3">2120</label>
+                                </div>
+                                <div class="page__content--item">
+                                    <p style="margin-left: 52px;">Värv:</p>
+                                    <label for="raam4" id="raam4">RAL 9005</label>
+                                </div>
+                                <div class="page__content--item">
+                                    <p style="margin-left: 42px;">VIN:</p>
+                                    <label for="raam5" id="raam5">E200190</label>
+                                </div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 34px;">Pikkus:</p>
+                                    <label for="raam6" id="raam6">5.5</label>
+                                </div>
+                                <div class="page__content--item">
+                                    <p style="margin-left: 45px;">Laius:</p>
+                                    <label for="raam7" id="raam7">-</label>
+                                </div>
+                                <div class="page__content--item">
+                                    <p style="margin-left: 16px;">Kõrgus:</p>
+                                    <label for="raam8" id="raam8">-</label>
+                                </div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 33px;">Veoais:</p>
+                                    <label for="raam9" id="raam9">7041</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: -22px;">Tõstesüsteem:</p>
+                                    <label for="raam10" id="raam10">2 x NAT 7</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 17px;">Rummud:</p>
+                                    <label for="raam11" id="raam11">6 Hardox</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 32px;">Pidurid:</p>
+                                    <label for="raam12" id="raam12">2.telg hüdro</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--group">
+                                <div class="page__content--item">
+                                    <p style="margin-left: 35px;">Rattad:</p>
+                                    <label for="raam13" id="raam13">-</label>
+                                </div>
+                                <div class="page__content--item"></div>
+                                <div class="page__content--item"></div>
+                            </div>
+                            <div class="page__content--text">
+                                <p>Märkused:</p>
+                                <textarea 
+                                    style="height: 10rem; width: 100%; border: none; font-size: 1.6rem; outline: none;" 
+                                    name="" id="comments2" cols="30" rows="10">
+                                </textarea>
+                            </div>
+                        </div> -->
+                        <!-- RAAM END -->
+                        <div class="page__table">
+                            <table>
+                                <tr>
+                                    <th style="width: 190px;"></th>
+                                    <th style="width: 190px;">Mudel/Mark/Mõõt</th>
+                                    <th ></th>
+                                    <th style="width: 190px;">Mudel/Mark/Mõõt</th>
+                                </tr>
+                                <tr>
+                                    <td>Viljaluuk</td>
+                                    <td></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Kleebised - "Jälgi rattamutrite kinnitust"</td>
+                                    <td></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Puisteketid/rihmad KRUUSA haagistel</td>
+                                    <td></td>
+                                    
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </page>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

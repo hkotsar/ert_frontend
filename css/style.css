@@ -50,6 +50,9 @@ body {
   flex: 1; }
 
 .section-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: auto; }
 
 .login {
@@ -101,7 +104,7 @@ body {
 
 .sidebar {
   background: #333;
-  flex: 0 0 8rem;
+  width: 8rem;
   height: 100vh; }
   .sidebar__nav {
     margin-top: 8rem;
@@ -139,7 +142,7 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  background-color: #f9f9f9;
+  background-color: #fff;
   margin-left: 1.9rem;
   min-width: 35rem;
   z-index: 1; }
@@ -201,3 +204,96 @@ body {
     position: absolute;
     margin-top: .8rem;
     margin-left: 1rem; }
+
+page {
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm; }
+
+page[size="A4"] {
+  width: 25cm;
+  height: 29.7cm; }
+
+.page__header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem; }
+  .page__header h2 {
+    font-size: 24px; }
+
+.page__generate {
+  display: flex;
+  padding: 1rem; }
+  .page__generate--file {
+    background: #337ab7;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: auto;
+    padding: .5rem; }
+  .page__generate--btn {
+    background: #337ab7;
+    color: #fff;
+    padding: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; }
+
+.page__titles {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 660px;
+  padding: .5rem 2rem;
+  background: #D0ECEC; }
+
+.page__title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-right: 3.2rem; }
+
+.page__input {
+  text-align: center;
+  font-size: 1.9rem;
+  width: 20rem; }
+
+.page__content {
+  width: 780px;
+  margin: auto; }
+  .page__content--group {
+    display: flex;
+    align-items: center;
+    text-align: center; }
+  .page__content--item {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 25rem; }
+    .page__content--item p {
+      font-size: 1.7rem;
+      display: block; }
+    .page__content--item label {
+      margin-left: .5rem;
+      font-size: 1.5rem;
+      display: block; }
+  .page__content--text {
+    margin-top: -13rem;
+    margin-right: 16rem;
+    font-size: 1.5rem;
+    width: 30rem;
+    height: 140px;
+    padding: .8rem;
+    border-radius: 10px;
+    border: 1px solid #337ab7;
+    float: right; }
+
+.page__table {
+  margin-top: 4rem;
+  font-size: 1.5rem; }
+  .page__table table {
+    width: 100%; }
+    .page__table table td, .page__table table th {
+      border: 2px solid #000;
+      text-align: left;
+      padding: 8px; }

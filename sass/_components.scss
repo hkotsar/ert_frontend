@@ -63,8 +63,9 @@
 }
 
 .sidebar {
+    // position: fixed;
     background: $dark-gray;
-    flex: 0 0 8rem;
+    width: 8rem;
     height: 100vh;
 
     &__nav {
@@ -118,7 +119,7 @@
     border-bottom-right-radius: 1rem;
    
     // padding: 1rem 0rem;
-    background-color: #f9f9f9;
+    background-color: #fff;
     margin-left: 1.9rem;
     min-width: 35rem;
     z-index: 1;
