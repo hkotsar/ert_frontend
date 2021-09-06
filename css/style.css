@@ -104,7 +104,7 @@ body {
 
 .sidebar {
   background: #333;
-  width: 8rem;
+  width: 7rem;
   height: 100vh; }
   .sidebar__nav {
     margin-top: 8rem;
@@ -112,15 +112,15 @@ body {
     flex-direction: column;
     align-items: center; }
   .sidebar__icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.4rem;
+    height: 2.4rem;
     fill: #fff; }
 
 .dropbtn {
   color: white;
   border: none;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 5.4rem;
+  height: 5.4rem;
   border-radius: 50%; }
 
 .dropdown {
@@ -143,7 +143,7 @@ body {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   background-color: #fff;
-  margin-left: 1.9rem;
+  margin-left: 1.3rem;
   min-width: 35rem;
   z-index: 1; }
   .dropdown-list h2 {

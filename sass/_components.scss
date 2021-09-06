@@ -65,7 +65,7 @@
 .sidebar {
     // position: fixed;
     background: $dark-gray;
-    width: 8rem;
+    width: 7rem;
     height: 100vh;
 
     &__nav {
@@ -76,8 +76,8 @@
     }
 
     &__icon {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.4rem;
+        height: 2.4rem;
         fill: #fff;    
     }
        
@@ -87,8 +87,8 @@
 .dropbtn {
     color: white;
     border: none;
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 5.4rem;
+    height: 5.4rem;
     border-radius: 50%;    
 }
 
@@ -120,7 +120,7 @@
    
     // padding: 1rem 0rem;
     background-color: #fff;
-    margin-left: 1.9rem;
+    margin-left: 1.3rem;
     min-width: 35rem;
     z-index: 1;
    
