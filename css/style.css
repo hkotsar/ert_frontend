@@ -13,7 +13,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box;
-  background-color: #eeee; }
+  background-color: #eeee !important; }
 
 #btn__1 {
   background: #ee1a26; }
@@ -54,6 +54,10 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: auto; }
+
+.container_2 {
+  margin: 8rem auto;
+  display: flex; }
 
 .login {
   width: 35rem;
@@ -297,3 +301,92 @@ page[size="A4"] {
       border: 2px solid #000;
       text-align: left;
       padding: 8px; }
+
+.screen {
+  margin: auto; }
+  .screen__list {
+    width: 120rem; }
+  .screen__item {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 3rem;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24); }
+    .screen__item--user {
+      display: flex;
+      align-items: center; }
+    .screen__item--icon {
+      width: 3rem;
+      height: 3rem;
+      margin-right: .8rem; }
+    .screen__item--product {
+      display: flex;
+      align-items: center; }
+    .screen__item--count {
+      margin-top: 1rem;
+      font-weight: bold; }
+  .screen__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 0 0 40%; }
+
+.legend {
+  flex: 0 0 1;
+  width: 100%;
+  align-items: center; }
+  .legend__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+  .legend__item {
+    display: block;
+    margin-right: .6rem; }
+    .legend__item--clock {
+      display: flex;
+      align-items: center;
+      fill: #3fa2f7; }
+  .legend__icon {
+    width: 2.5rem;
+    height: 2.5rem; }
+    .legend__icon--circle {
+      width: 2.9rem;
+      height: 2.9rem;
+      fill: #626262; }
+    .legend__icon--question {
+      width: 2.9rem;
+      height: 2.9rem;
+      fill: #143B9D; }
+    .legend__icon--danger {
+      width: 2.95rem;
+      height: 2.95rem;
+      fill: #ee1a26; }
+
+.check {
+  fill: #4ca90c; }
+
+.progressBar div {
+  box-sizing: border-box; }
+
+.progressBar {
+  border-radius: 5px;
+  width: 30rem;
+  margin: 10px auto;
+  height: 22px;
+  background-color: #ddd;
+  margin-right: .6rem; }
+
+.progressBar div {
+  height: 100%;
+  text-align: right;
+  padding: 0 10px;
+  line-height: 22px;
+  /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: #3fa2f7;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-sizing: border-box; }
