@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container_1">
+        <div class="sidebar">
+            <div class="sidebar__nav">
+                <div class="dropdown">
+                    <button id="btn__1" class="dropbtn">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="css/svg/icons.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="dropdown-list">
+                            <h2 id="heading-1">Tootmismoodul</h2>
+                            <a href="#">Ettevalmistus (Materjalid, Operatsioonid)</a>
+                            <a href="#">Eelarvestus ning järelarvestus</a>
+                            <a href="#">Tootmistellimused</a>
+                            <a href="#">Ressursside planeerimine</a>
+                            <a href="#">Materjalide käitlemine</a>
+                            <a href="#">Tööaegade, materjali</a>
+                            <a href="#">Statistika</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button id="btn__2" class="dropbtn">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="css/svg/icons.svg#icon-cart"></use>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="dropdown-list">
+                            <h2 id="heading-2">Ostmine</h2>
+                            <a href="#">Tarnijate register</a>
+                            <a href="#">Päringute haldus</a>
+                            <a href="#">Ostutellimuste haldus</a>
+                            <a href="#">Saabumised (kauba markeerimine)</a>
+                            <a href="#">Tarnija reskontra (maksefailid)</a>
+                            <a href="#">Statistika (BI)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button id="btn__3" class="dropbtn">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="css/svg/icons.svg#icon-briefcase"></use>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="dropdown-list">
+                            <h2 id="heading-3">Müük</h2>
+                            <a href="#">Kliendiregister</a>
+                            <a href="#">Pakkumised</a>
+                            <a href="#">Töö jaotused</a>
+                            <a href="#">Kauba saatmine ja transport</a>
+                            <a href="#">Arveldused (arvete plaanid)</a>
+                            <a href="#">Müügireskontra</a>
+                            <a href="excel_import.html">Impordi exceli andmed</a>
+                            <a href="#">Statistika (BI)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button id="btn__4" class="dropbtn">
+                        <svg class="sidebar__icon">
+                            <use xlink:href="css/svg/icons.svg#icon-folder"></use>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="dropdown-list">
+                            <h2 id="heading-4">Laomoodul</h2>
+                            <a href="#"> Artiklite register</a>
+                            <a href="#">MRP</a>
+                            <a href="#">Füüsiline inventuur</a>
+                            <a href="#">Erinevate ladude/asukohtade haldamine</a>
+                            <a href="#">Tooteregister</a>
+                            <a href="#">Kvaliteedi juhtimine</a>
+                            <a href="#">Laoväärtus ning pooltoodangu väärtus (WIP)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div class="content">
+            <div class="header">
+                <!-- <div class="logout">
+                    <button class="logout__btn">
+                        <svg class="logout__icon">
+                            <use xlink:href="css/svg/icons.svg#icon-exit"></use>
+                        </svg>
+                    </button>
+                </div> -->
+                <div class="logout">
+                    <div class="logout__btn">
+                        <a href="#">
+                            <svg class="logout__icon">
+                                <use xlink:href="css/svg/icons.svg#icon-exit"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- SISU -->
+            <div class="section-work">
+                <div class="work">
+                    <div class="work__header">
+                        <div class="work__header--filters">
+                            <br><br>
+                        </div>
+                        <div class="work__header--titles">
+                            <div class="work__header--flex">
+                                <h2>Kuupäev</h2>
+                                <h2>Kaardi nr.</h2>
+                                <h2>Nimi</h2>
+                                <h2>Toote mall</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__content">
+                        <div class="work__content--list">
+                            <div class="work__content--item">
+                                <div class="work__content--data">
+                                    <p style="margin-left: -1.2rem;">27.08.2021</p>
+                                    <p style="margin-right: -1rem;">23423</p>
+                                    <p style="margin-right: -1.7rem;">KAST</p>
+                                    <p style="margin-right: -.1rem;">E20 5,5x1,0 JLV</p>
+                                </div>
+                                <div class="work__content--other">
+                                    <a href="excel_import.html">
+                                        <svg class="work__content--icon">
+                                            <use xlink:href="css/svg/icons.svg#icon-file-text2"></use>
+                                        </svg>
+                                    </a>
+                                    <button>Pane tööse</button>
+                                </div>
+                            </div>
+                            <div class="work__content--item">
+                                <div class="work__content--data">
+                                    <p style="margin-left: -1.2rem;">27.08.2021</p>
+                                    <p style="margin-right: -1rem;">23423</p>
+                                    <p style="margin-right: -1.7rem;">KAST</p>
+                                    <p style="margin-right: -.1rem;">E20 5,5x1,0 JLV</p>
+                                </div>
+                                <div class="work__content--other">
+                                    <a href="excel_import.html">
+                                        <svg class="work__content--icon">
+                                            <use xlink:href="css/svg/icons.svg#icon-file-text2"></use>
+                                        </svg>
+                                    </a>
+                                    <button>Pane tööse</button>
+                                </div>
+                            </div>
+                            <div class="work__content--item">
+                                <div class="work__content--data">
+                                    <p style="margin-left: -1.2rem;">27.08.2021</p>
+                                    <p style="margin-right: -1rem;">23423</p>
+                                    <p style="margin-right: -1.7rem;">KAST</p>
+                                    <p style="margin-right: -.1rem;">E20 5,5x1,0 JLV</p>
+                                </div>
+                                <div class="work__content--other">
+                                    <a href="excel_import.html">
+                                        <svg class="work__content--icon">
+                                            <use xlink:href="css/svg/icons.svg#icon-file-text2"></use>
+                                        </svg>
+                                    </a>
+                                    <button>Pane tööse</button>
+                                </div>
+                            </div>
+                            <div class="work__content--item">
+                                <div class="work__content--data">
+                                    <p style="margin-left: -1.2rem;">27.08.2021</p>
+                                    <p style="margin-right: -1rem;">23423</p>
+                                    <p style="margin-right: -1.7rem;">KAST</p>
+                                    <p style="margin-right: -.1rem;">E20 5,5x1,0 JLV</p>
+                                </div>
+                                <div class="work__content--other">
+                                    <a href="excel_import.html">
+                                        <svg class="work__content--icon">
+                                            <use xlink:href="css/svg/icons.svg#icon-file-text2"></use>
+                                        </svg>
+                                    </a>
+                                    <button>Pane tööse</button>
+                                </div>
+                            </div>
+                            <div class="work__content--item">
+                                <div class="work__content--data">
+                                    <p style="margin-left: -1.2rem;">27.08.2021</p>
+                                    <p style="margin-right: -1rem;">23423</p>
+                                    <p style="margin-right: -1.7rem;">KAST</p>
+                                    <p style="margin-right: -.1rem;">E20 5,5x1,0 JLV</p>
+                                </div>
+                                <div class="work__content--other">
+                                    <a href="excel_import.html">
+                                        <svg class="work__content--icon">
+                                            <use xlink:href="css/svg/icons.svg#icon-file-text2"></use>
+                                        </svg>
+                                    </a>
+                                    <button>Pane tööse</button>
+                                </div>
+                            </div>
+                            <div class="work__content--item">
+                                <div class="work__content--data">
+                                    <p style="margin-left: -1.2rem;">27.08.2021</p>
+                                    <p style="margin-right: -1rem;">23423</p>
+                                    <p style="margin-right: -1.7rem;">KAST</p>
+                                    <p style="margin-right: -.1rem;">E20 5,5x1,0 JLV</p>
+                                </div>
+                                <div class="work__content--other">
+                                    <a href="excel_import.html">
+                                        <svg class="work__content--icon">
+                                            <use xlink:href="css/svg/icons.svg#icon-file-text2"></use>
+                                        </svg>
+                                    </a>
+                                    <button>Pane tööse</button>
+                                </div>
+                            </div>
+                            <div class="work__content--item">
+                                <div class="work__content--data">
+                                    <p style="margin-left: -1.2rem;">27.08.2021</p>
+                                    <p style="margin-right: -1rem;">23423</p>
+                                    <p style="margin-right: -1.7rem;">KAST</p>
+                                    <p style="margin-right: -.1rem;">E20 5,5x1,0 JLV</p>
+                                </div>
+                                <div class="work__content--other">
+                                    <a href="excel_import.html">
+                                        <svg class="work__content--icon">
+                                            <use xlink:href="css/svg/icons.svg#icon-file-text2"></use>
+                                        </svg>
+                                    </a>
+                                    <button>Pane tööse</button>
+                                </div>
+                            </div>
+                            <div class="work__content--item">
+                                <div class="work__content--data">
+                                    <p style="margin-left: -1.2rem;">27.08.2021</p>
+                                    <p style="margin-right: -1rem;">23423</p>
+                                    <p style="margin-right: -1.7rem;">KAST</p>
+                                    <p style="margin-right: -.1rem;">E20 5,5x1,0 JLV</p>
+                                </div>
+                                <div class="work__content--other">
+                                    <a href="excel_import.html">
+                                        <svg class="work__content--icon">
+                                            <use xlink:href="css/svg/icons.svg#icon-file-text2"></use>
+                                        </svg>
+                                    </a>
+                                    <button>Pane tööse</button>
+                                </div>
+                            </div>
+                            <div class="work__content--item">
+                                <div class="work__content--data">
+                                    <p style="margin-left: -1.2rem;">27.08.2021</p>
+                                    <p style="margin-right: -1rem;">23423</p>
+                                    <p style="margin-right: -1.7rem;">KAST</p>
+                                    <p style="margin-right: -.1rem;">E20 5,5x1,0 JLV</p>
+                                </div>
+                                <div class="work__content--other">
+                                    <a href="excel_import.html">
+                                        <svg class="work__content--icon">
+                                            <use xlink:href="css/svg/icons.svg#icon-file-text2"></use>
+                                        </svg>
+                                    </a>
+                                    <button>Pane tööse</button>
+                                </div>
+                            </div>
+                            <div class="work__content--item">
+                                <div class="work__content--data">
+                                    <p style="margin-left: -1.2rem;">27.08.2021</p>
+                                    <p style="margin-right: -1rem;">23423</p>
+                                    <p style="margin-right: -1.7rem;">KAST</p>
+                                    <p style="margin-right: -.1rem;">E20 5,5x1,0 JLV</p>
+                                </div>
+                                <div class="work__content--other">
+                                    <a href="excel_import.html">
+                                        <svg class="work__content--icon">
+                                            <use xlink:href="css/svg/icons.svg#icon-file-text2"></use>
+                                        </svg>
+                                    </a>
+                                    <button>Pane tööse</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
